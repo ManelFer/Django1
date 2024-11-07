@@ -20,11 +20,6 @@ from django.http import HttpResponse
 from home import views as home_views
 from blog import views as blog_views
 
-def home(request):
-    return HttpResponse('home')
-
-def blog(request):
-    return HttpResponse('blog')
 
 urlpatterns = [
     path('', home_views.home),
