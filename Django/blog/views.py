@@ -1,11 +1,11 @@
-from django.http import HttpResponse
-#from django.shortcuts import render
+#from django.http import HttpResponse
+from django.shortcuts import render
 
 def blog(request):
-    return HttpResponse('blog do app alterado')
+    return render(request, 'blog/blog.html')
 
 def exemplo(request):
     print('exemplo')
-    return HttpResponse('Exemplo do app alterado')
+    return render(request, 'blog/exemplo.html')
 
 # Create your views here.
